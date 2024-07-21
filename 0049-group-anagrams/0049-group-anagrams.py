@@ -2,9 +2,9 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         sortedStrs = []
         for str in strs:
-            sortedStrs.append(''.join(sorted(str)))
-        
+            sortedStrs.append(''.join(sorted(str)))     
         trimmedStrs = list(set(sortedStrs))
+        
         tempReturnList = [[str] for str in trimmedStrs]
         tempIdxList = [[] for idx in range(len(trimmedStrs))]
         returnList = [[] for idx in range(len(trimmedStrs))]
