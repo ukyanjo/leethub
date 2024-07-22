@@ -6,4 +6,4 @@ class Solution:
                 if(s[idx:idx+num] == s[idx:idx+num][::-1]):
                     tempDict[num].append(s[idx:idx+num])    
                     
-        return random.choice(tempDict[list(tempDict.keys())[-1]])
+        return tempDict[list(tempDict.keys())[-1]][0]
