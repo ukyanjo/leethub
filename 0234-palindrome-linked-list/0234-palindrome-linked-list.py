@@ -20,6 +20,7 @@ class Solution:
 #                 return False
             
 #         return True
+        # 이중 연결 리스트 구조의 데크의 경우 처음, 끝 추출이 용이해서 처음 생각한 풀이와 더 밀접함
         q = collections.deque()
     
         if not head:
