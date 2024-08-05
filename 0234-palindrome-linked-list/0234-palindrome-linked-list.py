@@ -21,6 +21,7 @@ class Solution:
             
 #         return True
         # 이중 연결 리스트 구조의 데크의 경우 처음, 끝 추출이 용이해서 처음 생각한 풀이와 더 밀접함
+        # 반면 리스트의 pop(0)는 쉬프팅이 발생하므로 시간복잡도가 O(1) -> O(n)으로 증가함
         q = collections.deque()
     
         if not head:
