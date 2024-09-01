@@ -1,2 +1,2 @@
 # leethub
-for leetcode algorithm tests
+for leetcode algorithm test
