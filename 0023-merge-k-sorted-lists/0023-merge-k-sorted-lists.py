@@ -12,13 +12,10 @@ class Solution:
             if lists[i]:
                 heapq.heappush(heap,(lists[i].val, i , lists[i]))
                 
-        print(heap)
-        
         while heap:
             node = heapq.heappop(heap)
             idx = node[1]
             result.next = node[2]
-            print(node)
             
             result = result.next
             if result.next:
