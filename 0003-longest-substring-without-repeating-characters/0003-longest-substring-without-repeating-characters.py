@@ -6,6 +6,7 @@ class Solution:
         
         for i, char in enumerate(s):
             if char in used and start <= used[char]:
+                print(i, start, used[char])
                 start = used[char] + 1                
             else:
                 maxLength = max(maxLength, i - start + 1)
